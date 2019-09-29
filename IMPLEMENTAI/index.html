@@ -1,0 +1,126 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"
+/>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"
+></script>
+
+<script src="./main.js" type="text/javascript"></script>
+<html ng-app="app1">
+  <head>
+    <title>ImplementAI</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body
+    ng-controller="ctrl1"
+    style="background:url('./background.jpg')  ;width:100%;height:100vh; background-size: cover"
+  >
+    <div
+      class="container"
+      style="background-color: white; padding-left: 50px; padding-right: 50px; padding-bottom: 30px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; "
+    >
+      <div class="jumbotron">
+        <h1>Welcome to SolarHug</h1>
+        <br />
+        <h6>
+          With environmental consciouness becoming more and more of a global
+          trend, the energy sector is no exception. Over the past few years, the
+          solar energy industry has seen remarkable growth. In contrast,
+          however, solar energy-related stocks have been performing rather
+          poorly.
+        </h6>
+        <h6>
+          This doesn't mean that you shouldn't invest in the future of energy.
+          SolarHug makes it easy to invest in these stocks by giving you finely
+          tuned estimates on how they'll perform in the near future.
+        </h6>
+        <br />
+        <h5 style="color: green">
+          SolarHug goes beyond numbers. It uses data about climate related
+          events and news around the world, prices of materials used in solar
+          panel manufacturing and more to give you an estimate that's more
+        </h5>
+        <br />
+        <h5 style="color: green">> Explore more stocks below</h5>
+      </div>
+
+      <table class="table">
+        <tr>
+          <th>Stock Name</th>
+          <th>High</th>
+          <th>Low</th>
+          <th>Open</th>
+          <th>Close</th>
+          <th></th>
+        </tr>
+        <tr ng-repeat="row in shownArray">
+          <td>{{ row.Name }}</td>
+          <td>{{ row.High }}</td>
+          <td>{{ row.Low }}</td>
+          <td>{{ row.Open }}</td>
+          <td>{{ row.Close }}</td>
+          <td>
+            <button type="button" class="btn btn-outline-info" ng-click="">
+              Reveal Predictions and More
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
